@@ -16,13 +16,15 @@
     "gen:hitboxes": "node scripts/gen-hitboxes.mjs",
     "gen:anim": "node scripts/gen-anim.mjs",
     "gen:colors": "node scripts/gen-color-sprites.mjs",
-    "gen:native": "node scripts/gen-native-geometry.mjs"
+    "gen:native": "node scripts/gen-native-geometry.mjs",
+    "deploy": "gh-pages -d dist"
   },
   "engines": {
     "//": "Node 24 for `node --test` with TypeScript type-stripping; Node 20 cannot load the tests' .ts imports at all",
     "node": ">=24"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "playwright": "^1.49.0",
     "typescript": "^5.7.0",
     "vite": "^6.0.0"
